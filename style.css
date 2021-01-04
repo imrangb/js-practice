@@ -1,0 +1,263 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:arial;
+	font-size:18px;
+	line-height:20px
+}
+.fix{
+	overflow:hidden
+}
+.floaatleft{
+	float:left
+}
+.floatright{
+	float:right
+}
+
+
+.main{
+	width:960px;
+	margin:10px auto;
+	border:10px solid #A6A867;
+	border-radius:10px
+}
+.header_area{
+	margin:20px 0;
+	background:#DAD9A9;
+}
+.logo.floatleft span {
+    position: absolute;
+    left: 320px;
+    top: 55px;
+    text-align: center;
+}
+.logo{
+	margin-left:25px;
+}
+.logo img{
+	width:80px;
+	height:auto;
+}
+.mainmenu{
+	margin-top:-65px;
+}
+.mainmenu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.mainmenu ul li{
+	float:left;
+}
+.mainmenu ul li a{
+	display:block;
+	padding:10px 15px;
+	text-decoration:none;
+	color:#000;
+}
+.mainmenu ul li a:hover{
+	text-decoration:none;
+}
+
+.maincontent_area{margin:5px 0}
+
+.left_bar_one {margin-left: 13px;overflow: hidden;width: 340px;border-radius:10px}
+.left_bar_one h1{font-size: 25px;font-weight: bold;line-height: 30px;margin-top: -35px;text-align: center;text-decoration: none;}
+.left-bar{background:#DAD9A9;overflow:hidden}
+.left-bar ul{margin:0;padding:0;list:none;overflow:hidden}
+.left-bar ul li{display:block;border-bottom:1px dotted #000}
+.left-bar ul li:last-child{border:0px dotted }
+.left-bar ul li a{display:block;padding:20px;text-decoration:none}
+.left-bar ul li a{text-decoration:none}
+
+.right_contante{width:560px;padding:10px;margin:0 10px;background:#DAD9A9;color:#000}
+.right_contante h1{}
+.right_contante p{}
+.right_contante span{float:right;background:#AEB071;width:300px;height:200px;padding:10px;border-radius:10px;color:#000;margin-left:5px}
+.google_map_ariea{margin: 20px 110px;}
+
+.footer_area{}
+.footer{background:#DAD9A9;color:#000;text-align:center;margin:10px 0}
+
+
+/*=================*/
+
+body.them-red .header_area, body.them-red .footer, body.them-red .left-bar, body.them-red .right_contante{
+	background:red
+}
+body.them-red .right_contante span{
+	background:#fff
+}
+
+
+body.them-green .header_area, body.them-green .footer, body.them-green .left-bar, body.them-green .right_contante{
+	background:green
+}
+body.them-green .right_contante span{
+	background:#fff
+}
+
+
+body.them-yellow .header_area, body.them-yellow .footer, body.them-yellow .left-bar, body.them-yellow .right_contante{
+	background:yellow
+}
+body.them-yellow .right_contante span{
+	background:#fff
+}
+
+
+body.them-sky .header_area, body.them-sky .footer, body.them-sky .left-bar, body.them-sky .right_contante{
+	background:#4dbfed;
+}
+
+body.them-sky .right_contante span{
+	background:#fff
+}
+
+.theme_color{
+	margin:50px 0;
+	min-height:50px;
+	border-radius:10px;
+	color:#fff
+}
+.theme_color ul{
+	margin:0;
+	padding:0;
+	list-style:none
+}
+.theme_color ul li{float:left;display:block;padding:15px 10px; cursor:pointer;}
+
+.theme_color ul li:hover{background:#000;color:#fff}
+
+
+
+.body-theme_color {
+  background: none repeat scroll 0 0 #ddd;
+  display: block;
+  height: 250px;
+  position: absolute;
+  top: 30%;
+  width: 170px;
+  
+  
+}
+.body-color{
+	margin-top:70px;
+	margin-left:20px
+}
+.de_one{
+	margin-top:-62px
+}
+.body-theme_color .body-color div.default{
+	background:#A6A867;
+	display:block;
+	height:50px;
+	width:50px;
+	float:left;
+	margin-right:20px;
+	cursor:pointer
+}
+.body-theme_color .body-color div.red{
+	background:red;
+	display:block;
+	height:50px;
+	width:50px;
+	float:left;
+	margin-right:20px;
+	cursor:pointer
+}
+.body-theme_color .body-color div.green{
+	background: none repeat scroll 0 0 green;
+	display: block;
+	float: left;
+	height: 50px;
+	width: 50px;
+	cursor:pointer
+}
+.body-theme_color .body-color div.yellow {
+	background: none repeat scroll 0 0 yellow;  
+	display: block;  
+	float: left;  
+	height: 50px;  
+	margin-right: 20px;  
+	margin-top: 30px;  
+	width: 50px;
+	cursor:pointer
+}
+.body-theme_color .body-color div.sky {
+  background: none repeat scroll 0 0 #4dbfed;
+  display: block;
+  float: left;
+  height: 50px;
+  margin-top: 30px;
+  width: 50px;
+  cursor:pointer
+}
+
+
+.ok_button{
+	position:absolute;
+	top:0;right:-50px;
+	display:block;
+	padding:20px;
+	background:#000;
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+	cursor:pointer
+}
+
+.close_button{
+	position:absolute;
+	top:0;right:-50px;
+	display:block;padding:20px;
+	background:#000;
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+	cursor:pointer
+}
+
+
+
+.default{background:#dad9a9}
+ul li.default:hover{color:#dad9a9}
+.red{background:red}
+ul li.red:hover{color:red}
+.green{background:green}
+ul li.green:hover{color:green}
+.yellow{background:yellow;color:#000}
+ul li.yellow:hover{color:yellow}
+.sky{background:#4dbfed}
+ul li.sky:hover{color:#4dbfed}
+
+
+body .body-theme_color{}
+body .ok{}
+
+
+
+
+/*
+.body-theme_color:before{position:absolute;top:0;right:0;content:"*";display:block;padding:20px;background:#000;color:#fff;font-size:30px;font-weight:bold}
+
+.body-theme_color:after{position:absolute;top:0;right:0;content:"X";display:block;padding:20px;background:#000;color:#fff;font-size:30px;font-weight:bold}
+
+Form HTML File
+<div class="google_map_ariea">
+			<div id="googleMap" style="width:750px;height:480px;border:1px solid #000;border-radius: 10px"></div>
+		</div>
+
+*/
+
+
+/*
+
+.default{color:#dad9a9}
+.red{color:red}
+.green{color:green}
+.yellow{color:yellow}
+.sky{color:#4dbfed}
+*/
+

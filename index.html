@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>This is title</title>
+	
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="style.css" />
+	
+	
+	
+</head>
+<body>
+
+<div class="body-theme_color">
+	
+	<div class="ok_button"><i class="fa fa-check"></i></div>
+	<div class="close_button"><i class="fa fa-angle-left"></i></div>
+	
+	<div class="body-color">
+		<div class="default de_one"></div>
+		<div class="red"></div>
+		<div class="green"></div>
+		<div class="yellow"></div>
+		<div class="sky"></div>
+	</div>
+</div>
+
+	<div class="main">
+		<div class="header_area fix">
+			<div class="logo floatleft fix">
+				<img src="img/logo_01.png" alt="" />
+			<span> Please click in logo<br> for amination</span>
+			</div>
+			<div class="mainmenu floatright fix">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Our Service</a></li>
+					<li><a href="#">Contact Us</a></li>
+					
+				</ul>
+			</div>
+		
+		</div>	
+		
+		<div class="maincontent_area fix">
+		
+			<div class="left_bar_one floaatleft fix">
+				<div class="left-bar">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">NS Treatment & Charges</a></li>
+					<li><a href="">Private Treatment & Charges</a></li>
+					<li><a href="">Polices</a></li>
+					<li><a href="">Contact & Opening Hours</a></li>
+				</ul>
+				</div>
+				<div class="theme_color">
+					<ul>
+						<li class="default">Default</li>
+						<li class="red">Red</li>
+						<li class="green">Green</li>
+						<li class="yellow">Yellow</li>
+						<li class="sky">Sky</li>
+					</ul>
+					
+				</div>
+				<h1>Please click here</h1>
+			</div>
+			<div class="right_contante floatright fix">
+				<div class="right_content">
+					<h1>Page Title</h1>
+					<span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo</span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in</p> <p>vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+					
+				</div>
+			</div>
+		
+		
+		</div>
+						
+		<div class="footer_area fix">
+			<div class="footer fix">
+				<p>&copy; All right reserved by Imran</p>
+			</div>
+				
+	</div>
+	</div>
+	
+	
+	<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	
+
+	 
+	 <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+		
+		<script type="text/javascript">
+		
+		/*background color change*/
+		$(document).ready(function(){
+		$(".red").click(function(){
+			$("body").addClass("them-red").removeClass("them-yellow them-green them-sky");
+		});
+		$(".default").click(function(){
+			$("body").removeClass("them-red them-green them-yellow them-sky");
+		});
+		$(".green").click(function(){
+			$("body").addClass("them-green").removeClass("them-red them-yellow them-sky");
+		});
+		
+		$(".yellow").click(function(){
+			$("body").addClass("them-yellow").removeClass("them-red them-green them-sky");
+		});
+		
+		
+		$(".sky").click(function(){
+			$("body").addClass("them-sky").removeClass("them-red them-yellow them-green ");
+		});
+		
+		$(".body-theme_color").click(function(){
+		$(this).addClass("ok");
+		
+		});
+		
+		
+		/*  */
+		$(".close_button").click(function(){
+			$(".body-theme_color").animate({left: '-=165px'});
+		});
+		
+		
+		$(".close_button").click(function(){
+			$(this).hide();
+		});
+		
+		
+		$(".ok_button").click(function(){
+			$(".body-theme_color").animate({left: '0px'});
+		});
+		
+		
+		$(".ok_button").click(function(){
+			$(this).hide();
+		});
+		
+		$(".ok_button").click(function(){
+			$(".close_button").show();
+		});
+		
+		$(".close_button").click(function(){
+			$(".ok_button").show();
+		});
+		
+		/*Animated logo*/
+		$( ".logo" ).click(function() {
+		  $(this).animate({
+			width: "10%",
+			opacity: 0.4,
+			marginLeft: "940px"
+			}, 5000 );
+		});
+		
+		$( ".logo" ).click(function() {
+		  $(this).animate({
+			width: "10%",
+			opacity: 1,
+			marginLeft: "20px"
+			}, 1000 );
+		});
+		
+		$( ".right_content h1" ).click(function() {
+		  $(this).animate({
+			width: "70%",
+			opacity: 1,
+			marginLeft: "140px",
+			fontSize: "3em"
+			}, 1500 );
+		});		
+		
+		
+		
+		});
+		
+		
+		</script>
+</body>
+</html>
